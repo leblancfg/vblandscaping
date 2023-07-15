@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.B. Paysagiste</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="V.B. Paysagiste">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials" id="nav-testimonials"></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="language-toggle-container">
+            <button id="english-toggle" onclick="toggleLanguage('en')">English</button>
+            <button id="french-toggle" onclick="toggleLanguage('fr')">Français</button>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 id="hero-title"></h1>
+                <p id="hero-tagline" class="tagline"></p>
+                <a href="#contact" class="cta-button" id="hero-ctaButton"></a>
+            </div>
+        </section>
+        
+        <section id="services">
+            <h2 id="services-title"></h2>
+            <p id="services-description"></p>
+            <ul id="services-list"></ul>
+        </section>
+        
+        <section id="portfolio">
+            <h2 id="portfolio-title"></h2>
+            <div class="gallery" id="portfolio-gallery">
+                <!-- FIXME -->
+                <img src="img/img1.jpg" alt="Project 1">
+                <img src="img/img2.jpg" alt="Project 2">
+                <img src="img/img3.jpg" alt="Project 3">
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <h2 id="testimonials-title"></h2>
+            <div class="testimonial" id="testimonial-1">
+                <p class="testimonial-text"></p>
+                <p class="testimonial-author"></p>
+            </div>
+            <div class="testimonial" id="testimonial-2">
+                <p class="testimonial-text"></p>
+                <p class="testimonial-author"></p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 id="contact-title"></h2>
+            <p id="contact-description"></p>
+            <div class="contact-details">
+                <!-- FIXME -->
+                <p>📞: 123-456-7890</p>
+                <p><strong>Email</strong>: <i id="contact-email"></i></p>
+                <p><strong id="contact-address"></strong></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> V.B. Paysagiste. All rights reserved. | Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const yearElement = document.getElementById("year");
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = `2017–${currentYear}`;
+
+        function loadContent() {
+            return fetch('content.json')
+              .then(response => response.json());
+          }
+
+        function updateContent(content) {
+          const language = document.documentElement.lang;
+
+          for (const sectionKey in content) {
+            const sectionContent = content[sectionKey][language];
+            const sectionElement = document.getElementById(sectionKey);
+
+            if (sectionElement) {
+              for (const subSectionKey in sectionContent) {
+                const elementId = `${sectionKey}-${subSectionKey}`;
+                const element = document.getElementById(elementId);
+
+                if (element) {
+                  element.textContent = sectionContent[subSectionKey];
+                }
+              }
+            }
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          loadContent().then(content => {
+            console.log('Content:', content);
+            updateContent(content);
+          });
+        });
+
+        function toggleLanguage(language) {
+          document.documentElement.lang = language;
+          loadContent().then(content => {
+            console.log("Toggle language to:", language);
+            updateContent(content);
+          });
+        }
+  </script>
+</body>
+</html>
+
