@@ -1,0 +1,111 @@
+/* Add your general color scheme and thematic guidelines here */
+/* For example: */
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+    font-family: "Rubik", Arial, sans-serif;
+}
+
+/* Add specific styles for the landing page elements */
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tagline {
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+    margin: auto 10% auto 20px;
+    object-fit: cover;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+

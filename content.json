@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "en": {
+        "testimonials": "Testimonials"
+    },
+    "fr": {
+        "testimonials": "Témoignages"
+    }
+  },
+  "hero": {
+    "en": {
+      "title": "V.B. Landscaping",
+      "tagline": "Interlock, decks, fences, retaining walls",
+      "ctaButton": "Get a Free Estimate"
+    },
+    "fr": {
+      "title": "V.B. Paysagiste",
+      "tagline": "Pavé uni, patio, clôtures, mur de soutènement, remise et tourbe",
+      "ctaButton": "Obtenez une estimation gratuite"
+    }
+  },
+  "services": {
+    "en": {
+      "title": "Our Services",
+      "description": "Lorem ipsum dolor sit amet.",
+      "list": ["Interlock", "Decks", "Fences", "Retaining Walls"]
+    },
+    "fr": {
+      "title": "Nos services",
+      "description": "Lorem ipsum dolor sit amet.",
+      "list": ["Pavé uni", "Patio", "Clôtures", "Mur de soutènement", "Remise", "Tourbe"]
+    }
+  },
+  "portfolio": {
+    "en": {
+      "title": "Our Portfolio"
+    },
+    "fr": {
+      "title": "Notre portfolio"
+    }
+  },
+  "testimonials": {
+    "en": {
+      "title": "Testimonials",
+      "testimonial1": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "author": "John Doe"
+      },
+      "testimonial2": {
+        "text": "Vestibulum ac ultricies magna, in lacinia elit.",
+        "author": "Jane Smith"
+      }
+    },
+    "fr": {
+      "title": "Témoignages",
+      "testimonial1": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "author": "John Doe"
+      },
+      "testimonial2": {
+        "text": "Vestibulum ac ultricies magna, in lacinia elit.",
+        "author": "Jane Smith"
+      }
+    }
+  },
+  "contact": {
+    "en": {
+      "title": "Contact Us",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "phone": "123-456-7890",
+      "email": "info@example.com",
+      "address": "123 Main Street, City, Country"
+    },
+    "fr": {
+      "title": "Contactez-nous",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "phone": "123-456-7890",
+      "email": "info@example.com",
+      "address": "123 Rue Principale, Ville, Pays"
+    }
+  }
+}
