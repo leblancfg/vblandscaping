@@ -10,33 +10,33 @@
   "hero": {
     "en": {
       "title": "V.B. Landscaping",
-      "tagline": "Interlock, decks, fences, retaining walls",
+      "tagline": "Your hardscape pros serving Ottawa Gatineau",
       "ctaButton": "Get a Free Estimate"
     },
     "fr": {
       "title": "V.B. Paysagiste",
-      "tagline": "Pavé uni, patio, clôtures, mur de soutènement, remise et tourbe",
+      "tagline": "Professionnels de l’aménagement paysager pour Ottawa Gatineau",
       "ctaButton": "Obtenez une estimation gratuite"
     }
   },
   "services": {
     "en": {
       "title": "Our Services",
-      "description": "Lorem ipsum dolor sit amet.",
-      "list": ["Interlock", "Decks", "Fences", "Retaining Walls"]
+      "description": "",
+      "list": ["Interlock", "Patios", "Decks", "Fences", "Retaining Walls", "Sheds", "Sod"]
     },
     "fr": {
       "title": "Nos services",
       "description": "Lorem ipsum dolor sit amet.",
-      "list": ["Pavé uni", "Patio", "Clôtures", "Mur de soutènement", "Remise", "Tourbe"]
+      "list": ["Pavé uni", "Patios", "Terrasses", "Clôtures", "Mur de soutènement", "Remises", "Tourbe"]
     }
   },
   "portfolio": {
     "en": {
-      "title": "Our Portfolio"
+      "title": "Some of our work"
     },
     "fr": {
-      "title": "Notre portfolio"
+      "title": "Quelques réalisations"
     }
   },
   "testimonials": {
@@ -67,16 +67,12 @@
     "en": {
       "title": "Contact Us",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "phone": "123-456-7890",
-      "email": "info@example.com",
-      "address": "123 Main Street, City, Country"
+      "email": "info@vblandscaping.com"
     },
     "fr": {
       "title": "Contactez-nous",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "phone": "123-456-7890",
-      "email": "info@example.com",
-      "address": "123 Rue Principale, Ville, Pays"
+      "email": "info@vblandscaping.com"
     }
   }
 }

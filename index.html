@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V.B. Paysagiste</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
@@ -16,7 +20,7 @@
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials" id="nav-testimonials"></a></li>
+                <!-- <li><a href="#testimonials" id="nav-testimonials"></a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,32 +48,33 @@
             <h2 id="portfolio-title"></h2>
             <div class="gallery" id="portfolio-gallery">
                 <!-- FIXME -->
-                <img src="img/img1.jpg" alt="Project 1">
-                <img src="img/img2.jpg" alt="Project 2">
-                <img src="img/img3.jpg" alt="Project 3">
+                <a href="img/img1.jpg"><img src="img/img1.jpg" alt="Project 1"></a>
+                <a href="img/img2.jpg"><img src="img/img2.jpg" alt="Project 2"></a>
+                <a href="img/img3.jpg"><img src="img/img3.jpg" alt="Project 3"></a>
             </div>
         </section>
         
-        <section id="testimonials">
-            <h2 id="testimonials-title"></h2>
-            <div class="testimonial" id="testimonial-1">
-                <p class="testimonial-text"></p>
-                <p class="testimonial-author"></p>
-            </div>
-            <div class="testimonial" id="testimonial-2">
-                <p class="testimonial-text"></p>
-                <p class="testimonial-author"></p>
-            </div>
-        </section>
+        <!-- <section id="testimonials"> -->
+        <!--     <h2 id="testimonials-title"></h2> -->
+        <!--     <div class="testimonial" id="testimonial-1"> -->
+        <!--         <p class="testimonial-text"></p> -->
+        <!--         <p class="testimonial-author"></p> -->
+        <!--     </div> -->
+        <!--     <div class="testimonial" id="testimonial-2"> -->
+        <!--         <p class="testimonial-text"></p> -->
+        <!--         <p class="testimonial-author"></p> -->
+        <!--     </div> -->
+        <!-- </section> -->
         
         <section id="contact">
             <h2 id="contact-title"></h2>
             <p id="contact-description"></p>
             <div class="contact-details">
-                <!-- FIXME -->
-                <p>📞: 123-456-7890</p>
-                <p><strong>Email</strong>: <i id="contact-email"></i></p>
-                <p><strong id="contact-address"></strong></p>
+                <p>📞: 819-918-9705</p>
+                <p>📧: <a href="mailto:info@vblandscaping.com"><i id="contact-email"></i></a></p>
+                <!-- <p>📮: Gatineau, Québec, Canada</p> -->
+                <p><i class="fab fa-facebook"></i>: <a href="https://www.facebook.com/VBpaysagiste/">Facebook</a></p>
+                <p><i class="fab fa-instagram"></i>: <a href="https://www.instagram.com/vb_landscaping/">Instagram</a></p>
             </div>
         </section>
     </main>
@@ -81,47 +86,8 @@
         const yearElement = document.getElementById("year");
         const currentYear = new Date().getFullYear();
         yearElement.textContent = `2017–${currentYear}`;
-
-        function loadContent() {
-            return fetch('content.json')
-              .then(response => response.json());
-          }
-
-        function updateContent(content) {
-          const language = document.documentElement.lang;
-
-          for (const sectionKey in content) {
-            const sectionContent = content[sectionKey][language];
-            const sectionElement = document.getElementById(sectionKey);
-
-            if (sectionElement) {
-              for (const subSectionKey in sectionContent) {
-                const elementId = `${sectionKey}-${subSectionKey}`;
-                const element = document.getElementById(elementId);
-
-                if (element) {
-                  element.textContent = sectionContent[subSectionKey];
-                }
-              }
-            }
-          }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-          loadContent().then(content => {
-            console.log('Content:', content);
-            updateContent(content);
-          });
-        });
-
-        function toggleLanguage(language) {
-          document.documentElement.lang = language;
-          loadContent().then(content => {
-            console.log("Toggle language to:", language);
-            updateContent(content);
-          });
-        }
   </script>
+  <script src="bilingue.js"></script>
 </body>
 </html>
 
