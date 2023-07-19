@@ -15,14 +15,6 @@ header {
   width: 100%;
 }
 
-#language-toggle-container {
-  display: flex;
-}
-
-#language-toggle-container button {
-  margin-left: 10px;
-}
-
 #nav ul {
   list-style: none;
   display: flex;
@@ -36,6 +28,17 @@ header {
   text-decoration: none;
 }
 
+#language-toggle-container {
+  display: flex;
+}
+
+#language-toggle-container button {
+  margin-left: 10px;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+}
 .hero-content {
     text-align: center;
     margin-top: 100px;
@@ -122,7 +125,12 @@ footer {
   }
 
   #nav ul li {
-    margin: 5px 0;
+    padding-right: 30px;
+  }
+
+  .hero-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
