@@ -1,48 +1,39 @@
-/* Add your general color scheme and thematic guidelines here */
-/* For example: */
-body {
-    background-color: #f5f5f5;
-    color: #333333;
-    font-family: "Rubik", Arial, sans-serif;
-}
-
-/* Add specific styles for the landing page elements */
-.logo img {
-    max-width: 150px;
-    height: auto;
-}
-
+/* CSS for desktop view */
 header {
   background-color: #f8f8f8;
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-nav ul li {
-  margin: 0 10px;
+.logo {
+  width: 100px;
 }
 
-nav ul li a {
+.logo img {
+  width: 100%;
+}
+
+#language-toggle-container {
+  display: flex;
+}
+
+#language-toggle-container button {
+  margin-left: 10px;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#nav ul li {
+  margin-right: 10px;
+}
+
+#nav ul li a {
   text-decoration: none;
-  color: #333;
-}
-
-nav ul li a:hover {
-  color: #000;
 }
 
 .hero-content {
@@ -79,17 +70,18 @@ h2 {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery img {
-    width: 50%;
-    height: 50%;
-    margin-bottom: 20px;
-    margin: auto 10% auto 20px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .testimonial {
@@ -107,5 +99,41 @@ footer {
     color: #ffffff;
     padding: 20px;
     text-align: center;
+}
+
+/* CSS for mobile view */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #language-toggle-container {
+    margin-top: 10px;
+  }
+
+  #nav {
+    margin-top: 10px;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav ul li {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .gallery img {
+    grid-column: auto;
+    grid-row: auto;
+    padding-bottom: 10px;
 }
 
