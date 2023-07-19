@@ -22,12 +22,12 @@
   "services": {
     "en": {
       "title": "Our Services",
-      "description": "",
+      "description": "Quality landscaping services for your outdoor spaces.",
       "list": ["Interlock", "Patios", "Decks", "Fences", "Retaining Walls", "Sheds", "Sod"]
     },
     "fr": {
       "title": "Nos services",
-      "description": "Lorem ipsum dolor sit amet.",
+      "description": "Des services d'aménagement paysager de qualité pour vos espaces extérieurs.",
       "list": ["Pavé uni", "Patios", "Terrasses", "Clôtures", "Mur de soutènement", "Remises", "Tourbe"]
     }
   },
@@ -66,12 +66,12 @@
   "contact": {
     "en": {
       "title": "Contact Us",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Get in touch with us for a free consultation.",
       "email": "info@vblandscaping.com"
     },
     "fr": {
       "title": "Contactez-nous",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Contactez-nous pour une consultation gratuite.",
       "email": "info@vblandscaping.com"
     }
   }
