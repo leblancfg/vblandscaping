@@ -4,4 +4,4 @@ server:
 	@live-server
 
 open:
-	@open 127.0.0.1:8080
+	@open -u http://127.0.0.1:8080
